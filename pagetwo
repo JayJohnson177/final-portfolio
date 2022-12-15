@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+
+<HEAD>Page Two </HEAD>
+
+<title>Psychlone 2</title>
+
+<body>
+<h3>welcome to page two!!! CHECK OUT MY CALCULATOR!</h3>
+
+<table >
+    <tbody>
+    <tr>
+        <td colspan="4"> <input type="text" name="expression" value="" id="expression"> </td>
+        <td><button type="button" name="button"
+        onclick="reset()"> clear </button> </td>
+    </tr> 
+    <tr>
+       
+        <td> <button type="button" name="button"
+            onclick="update('7')"> 7 </button> </td>
+
+        <td><button type="button" name="button"
+            onclick="update('8')"> 8 </button> </td>
+
+        <td><button type="button" name="button"
+            onclick="update('9')"> 9 </button> </td>
+
+        <td><button type="button" name="button"
+            onclick="update('/')"> / </button> </td>
+        
+    </tr>
+    <tr>
+       
+        <td> <button type="button" name="button"
+            onclick="update('4')"> 4 </button> </td>
+
+        <td><button type="button" name="button"
+            onclick="update('5')"> 5 </button> </td>
+
+        <td><button type="button" name="button"
+            onclick="update('6')"> 6 </button> </td>
+
+        <td><button type="button" name="button"
+            onclick="update('*')"> * </button> </td>
+        
+    </tr>
+    <tr>
+       
+        <td> <button type="button" name="button"
+            onclick="update('1')"> 1 </button> </td>
+
+        <td><button type="button" name="button"
+            onclick="update('2')"> 2 </button> </td>
+
+        <td><button type="button" name="button"
+            onclick="update('3')"> 3 </button> </td>
+
+        <td><button type="button" name="button"
+            onclick="update('-')"> - </button> </td>
+        
+    </tr>
+    <tr>
+       
+        <td> <button type="button" name="button"
+            onclick="update('0')"> 0 </button> </td>
+
+        <td><button type="button" name="button"
+            onclick="update('.')"> . </button> </td>
+
+        <td><button type="button" name="button"
+            onclick="calculate('=')"> = </button> </td>
+
+        <td><button type="button" name="button"
+            onclick="update('+')"> + </button> </td>
+        
+    </tr>
+        </tbody>
+</table>
+<script type="text/javascript">
+        
+    function calculate() 
+    {
+        var ex1 = document.getElementById('expression');
+        ex1.value = eval(ex1.value)
+    }
+
+    function reset()
+    {
+        var ex1 = document.getElementById('expression');
+        ex1.value = ""
+
+    }
+    function update(buttonValue)
+    {
+        var ex1 = document.getElementById('expression');
+        ex1.value = ex1.value + buttonValue
+
+    }
+
+</script>
+
+
+<p>Goodblye!</p>
+<button href="index.html">Previous</button>
+</body>
+
+</html>
